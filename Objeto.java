@@ -1,5 +1,5 @@
 public class Objeto {
 
-  @Tabela
+  @Tabela("Nome da tabela")
   private final int tabela = 81;
 }

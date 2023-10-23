@@ -10,7 +10,8 @@ public class App {
 
     for (Field field : objeto.getClass().getDeclaredFields()) {
       if (field.isAnnotationPresent(Tabela.class)) {
-        System.out.println(field.getName());
+        String msg = field.getAnnotation(Tabela.class).value();
+        System.out.println(msg);
       }
     }
   }
